@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Головна</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -455,6 +455,25 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <p class="subscribe-title">Підпишіться на розсилку</p>
+          <div class="footer-subscribe">
+            <label>
+              <input
+                type="email"
+                name="email"
+                class="footer-subscribe-field"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-submit-btn">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -464,6 +483,74 @@
             <use href="./images/icons.svg#icon-close-black-18dp-1"></use>
           </svg>
         </button>
+        <form class="modal-window-form">
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form-field">
+            <label class="form-label" for="user-name">Ім'я</label>
+            <div class="form-input">
+              <input
+                class="input-wrap"
+                id="user-name"
+                type="text"
+                name="user-name"
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-tel">Телефон</label>
+            <div class="form-input">
+              <input
+                class="input-wrap"
+                id="user-tel"
+                type="tel"
+                name="user-tel"
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-email">Пошта</label>
+            <div class="form-input">
+              <input
+                class="input-wrap"
+                id="user-email"
+                type="email"
+                name="user-email"
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-comment">
+            <label class="form-label" for="textarea">Коментар</label>
+            <textarea
+              class="textarea"
+              id="textarea"
+              name="textarea"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" />
+              <svg width="16" height="15" class="icon-no-active">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <svg width="16" height="15" class="icon-checked">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="checkbox-link">Умови договору</a>
+            </label>
+          </div>
+          <button class="form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
