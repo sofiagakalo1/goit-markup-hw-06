@@ -223,24 +223,22 @@ body {
 .benefits-icon-list {
   display: flex;
   gap: 30px;
+  width: calc((100% - 90px) / 4);
 }
 .benefits-icon-item {
-  display: flex;
+  display: block;
   width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-
+  height: 248px;
+}
+.benefits-icon {
+  display: flex;
   background-color: #f5f4fa;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-}
-.benefits-list {
-  display: flex;
-  width: calc((100% - 90px) / 4);
-}
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
 }
 .benefits-title {
   margin-bottom: 10px;
